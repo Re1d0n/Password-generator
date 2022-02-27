@@ -4,8 +4,27 @@
 
 let lowercase ="qwertyuiopasdfghjklzxcvbnm"
 let numbers =1234567890
+let specialCharecters ="!@#$%^&*()_+"
 
 let emptyString = ""
+
+let addLetters = window.confirm("Do you want lowercase?")
+
+if(addLetters===true){
+emptyString = emptyString + lowercase
+}
+
+let addNumbers = window.confirm("Do you want numbers?")
+
+if(addNumbers===true){
+  emptyString = emptyString + numbers
+}
+
+let addSpecialCharecters = window.confirm("Do you want special charecters?")
+
+if(addSpecialCharecters===true){
+  emptyString = emptyString +specialCharecters
+}
 
 let number = 8
 
@@ -13,8 +32,8 @@ const generatePassword = () => {
   passwordString = '';
 
 for (var i = 0; i < number; i++) {
-let string = Math.floor(Math.random() * lowercase.length);
-passwordString += lowercase.substring (string, string + 1);
+let string = Math.floor(Math.random() * emptyString.length);
+passwordString += emptyString.substring (string, string + 1);
 }
 
 console.log(passwordString);
