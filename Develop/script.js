@@ -5,6 +5,7 @@
 let lowercase ="qwertyuiopasdfghjklzxcvbnm"
 let numbers =1234567890
 let specialCharecters ="!@#$%^&*()_+"
+let Uppercase ="QWERTYUIOPASDFGHJKLZXCVBNM"
 
 let emptyString = ""
 
@@ -23,10 +24,19 @@ if(addNumbers===true){
 let addSpecialCharecters = window.confirm("Do you want special charecters?")
 
 if(addSpecialCharecters===true){
-  emptyString = emptyString +specialCharecters
+  emptyString = emptyString + specialCharecters
+}
+
+let addUppercase = window.confirm("Do you want uppercase letters?")
+
+if(addUppercase===true){
+  emptyString = emptyString + Uppercase
 }
 
 let number = 8
+
+
+
 
 const generatePassword = () => {
   passwordString = '';
