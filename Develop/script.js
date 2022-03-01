@@ -33,9 +33,15 @@ if(addUppercase===true){
   emptyString = emptyString + Uppercase
 }
 
-let number = 8
+let number = getNumber();
 
-
+function getNumber(){
+  let passwordAmount = 0;
+  while(passwordAmount >128 || passwordAmount < 8){
+    passwordAmount = prompt("Enter a number between 8 and 128 charecters.");
+  }
+return passwordAmount;
+}
 
 
 const generatePassword = () => {
@@ -65,6 +71,7 @@ generatePassword();
 
 
 
+  document.getElementById("password").innerHTML = passwordString;
 
 
 
