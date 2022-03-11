@@ -1,0 +1,5 @@
+This is my password generator, it will ask you if you want to include 
+uppercase, lowercase, numbers & special charecters. it will also give
+ you the option to choose the password length from 8 to 128 charecters.
+ After all questions are answered it will give you a password with selected 
+ options.
